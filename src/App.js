@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const a = 3;
+  const b = 3;
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +13,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
+          data-testid="mylink"
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -17,6 +21,15 @@ function App() {
         >
           Learn React
         </a>
+
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Orange</li>
+        </ul>
+
+        <h1 data-testid="mytestid">Hello</h1>
+        <span title="sum">{a + b}</span>
       </header>
     </div>
   );
